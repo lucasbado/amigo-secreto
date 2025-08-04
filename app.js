@@ -54,12 +54,11 @@ function sortearAmigo() {
     let resultado = document.getElementById('resultado');
     let indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
     let nomeSorteado = listaAmigos[indiceAleatorio];
+    resultado.innerHTML = '';
     document.getElementById('listaAmigos').style.display = 'none';
     resultado.innerHTML += `O amigo(a) sorteado(a) foi <li>${nomeSorteado}</li>`;
     
-    setTimeout(() => {
-        resultado.innerHTML = '';
-    }, 2000);
+   
     
 }
 
@@ -67,6 +66,7 @@ function apagarLista() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = '';
     listaAmigos = [];
+    resultado.innerHTML = '';
     exibirTextoNaTela('p', 'Lista de amigos apagada com sucesso!');
     setTimeout(() => {
         exibirTextoNaTela('p', `Amigo(a)s adicionados: ${listaAmigos.length}`);
