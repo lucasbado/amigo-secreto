@@ -60,7 +60,7 @@ Você pode acessar o projeto clicando aqui:
 
 ## 👨‍💻 Pessoas Desenvolvedoras do Projeto
 
-- [Lucas Alves](https://github.com/lucasbado
+- [Lucas Alves](https://github.com/lucasbado)
 
 ---
 
